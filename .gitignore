@@ -23,6 +23,9 @@ lib-cov
 coverage
 *.lcov
 
+# testing
+/coverage
+
 # nyc test coverage
 .nyc_output
 
@@ -39,17 +42,16 @@ jspm_packages/
 web_modules/
 
 # dotenv environment variables file
-.env
-.env.local
-.env.test
-.env.production
 
-# Next.js build output
-.next
-out
+.env*.local
 
-# Serverless directories
-.serverless/
+# vercel
+.vercel
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# next.js
+/.next/
+/out/
